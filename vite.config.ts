@@ -5,6 +5,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 
 const PWAConfig = {
+  base: "/age_calculator_app/",
   includedAssets: ["**/*"],
   workbox: { globPatterns: ["**/*"] },
   manifest: {
@@ -40,6 +41,7 @@ const PWAConfig = {
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/age_calculator_app/",
   plugins: [vue(), VitePWA(PWAConfig)],
   resolve: {
     alias: {
