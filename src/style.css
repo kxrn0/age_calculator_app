@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --grey-700: #7e7e7e;
+  --grey-500: #716f6f;
+  --grey-200: #dcdcdc;
+  --grey-100: #f0f0f0;
+  --red-400: #ff5959;
+  --purple-500: #854dff;
+  --base-duration: 0.33s;
+  --break-point-tablet: 55rem;
+  --break-point-mobile: 43rem;
+}
+
+body {
+  background: var(--grey-100);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}

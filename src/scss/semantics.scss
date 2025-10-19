@@ -1,0 +1,12 @@
+@use "@/scss/text_presets";
+@use "@/scss/variables";
+
+@mixin error {
+  @include text_presets.text-preset-5-italic;
+
+  color: var(--red-400);
+
+  @media (max-width: variables.$break-point-mobile) {
+    @include text_presets.text-preset-6-italic;
+  }
+}

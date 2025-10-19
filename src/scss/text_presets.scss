@@ -1,0 +1,70 @@
+@font-face {
+  font-family: poppins-extra-bold-italic;
+  src: url("../assets/fonts/Poppins-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: poppins-bold;
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: poppins-italic;
+  src: url("../assets/fonts/Poppins-Italic.ttf");
+}
+
+@mixin text-preset-1 {
+  font-family: poppins-extra-bold-italic;
+  font-size: 6.5rem;
+  line-height: 110%;
+  letter-spacing: -0.125rem;
+}
+
+@mixin text-preset-2 {
+  font-family: poppins-extra-bold-italic;
+  font-size: 3.5rem;
+  line-height: 110%;
+  letter-spacing: -0.125rem;
+}
+
+@mixin text-preset-3 {
+  font-family: poppins-bold;
+  font-size: 2rem;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-4 {
+  font-family: poppins-bold;
+  font-size: 1.25rem;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-5-bold {
+  font-family: poppins-bold;
+  font-size: 0.875rem;
+  line-height: 150%;
+  letter-spacing: 0.3125rem;
+}
+
+@mixin text-preset-5-italic {
+  font-family: poppins-italic;
+  font-size: 0.875rem;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-6-bold {
+  font-family: poppins-bold;
+  line-height: 150%;
+  font-size: 0.75rem;
+  letter-spacing: 0.25rem;
+}
+
+@mixin text-preset-6-italic {
+  font-family: poppins-italic;
+  font-size: 0.75rem;
+  line-height: 150%;
+  letter-spacing: 0;
+}
