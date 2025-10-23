@@ -14,6 +14,10 @@ const props = defineProps<{
   isDateInvalid: boolean;
 }>();
 const isTerrified = computed(() => props.state.error.value !== "none" || props.isDateInvalid);
+
+function handle_key_down(event: KeyboardEvent) {
+  if (event.key === ".") event.preventDefault();
+}
 </script>
 
 <template>
@@ -23,7 +27,7 @@ const isTerrified = computed(() => props.state.error.value !== "none" || props.i
       type="number"
       :placeholder="props.placeholder"
       @input="(e) => emits('time-input', props.state, e)"
-      onkeydown="if(event.key==='.') event.preventDefault();"
+      @keydown="handle_key_down"
     />
     <span v-if="props.state.error.value === 'out-of-range'" class="error">{{
       props.outOfRangeErrorMessage

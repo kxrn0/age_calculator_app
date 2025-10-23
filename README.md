@@ -42,8 +42,8 @@ Users should be able to:
 
 ### Built with
 
-[Vue](https://vuejs.org)
-[Sass](https://sass-lang.com)
+- [Vue](https://vuejs.org)
+- [Sass](https://sass-lang.com)
 
 ### What I learned
 

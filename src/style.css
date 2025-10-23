@@ -14,8 +14,6 @@
   --red-400: #ff5959;
   --purple-500: #854dff;
   --base-duration: 0.33s;
-  --break-point-tablet: 55rem;
-  --break-point-mobile: 43rem;
 }
 
 body {
