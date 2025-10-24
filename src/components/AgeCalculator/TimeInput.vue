@@ -51,6 +51,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="number"] {
   appearance: textfield;
+  -moz-appearance:textfield; /* Firefox */
 }
 
 label {
